@@ -14,7 +14,7 @@ time.sleep(5)
 
 # 로그인 창 연결
 app = Application(backend="uia").connect(title_re="CYBOS.*")
-dlg = app.window(title_re="CYBOS.*")
+dlg = rbtwttttttttteavgapp.window(title_re="CYBOS.*")
 dlg.wait("visible", timeout=15)
 
 # ID 입력
