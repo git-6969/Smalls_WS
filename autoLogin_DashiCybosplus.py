@@ -30,10 +30,10 @@ time.sleep(0.5)
 
 # Enter 키 입력해서 로그인
 send_keys("{ENTER}")
-time.sleep(25)  # 로그인 후 대기
+time.sleep(45)  # 로그인 후 대기
 
 send_keys("{ENTER}")
-time.sleep(7)  # 로그인 후 대기
+time.sleep(30)  # 로그인 후 대기
 # 로그인 후 뜨는 공지사항 창 닫기
 try:
     popup_app = Application(backend="uia").connect(title="공지사항", timeout=10)
@@ -45,3 +45,9 @@ try:
         close_btn.click_input()
 except Exception as e:
     print(f"공지사항 창 닫기 실패: {e}")
+
+
+os.startfile(r"C:\Users\Public\Desktop\대신증권 CYBOS 5.lnk")
+time.sleep(2)
+send_keys("{ENTER}")
+

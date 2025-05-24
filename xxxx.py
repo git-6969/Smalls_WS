@@ -32,6 +32,6 @@ time.sleep(0.5)
 # Enter 키 입력해서 로그인
 send_keys("{ENTER}")
 
-time.sleep(40)
+time.sleep(60)
 
 send_keys("{ENTER}")
